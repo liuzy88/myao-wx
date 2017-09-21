@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<wxs src="../../wxs.wxs" module="WXS" />
+<view class="container">
+  <view class="items">
+    <block wx:for="{{items}}" wx:key="" wx:for-item="item">
+      <view class="item" id="item{{item.id}}">
+        <view class="img">
+          <block wx:if="{{item.img.endsWith('mp4')}}">
+            <view class="video">
+              <video src="{{WXS.getUrl(item.img)}}" controls width="100%" mode="widthFix"></video>
+            </view>
+          </block>
+          <block wx:else>
+            <image src="{{WXS.getUrl(item.img)}}" mode="widthFix"></image>
+          </block>
+          <view class="ctime">
+            <text>{{item.ctime}}</text>
+          </view>
+          <view class="tags" wx:for="{{item.tag.split(',')}}" wx:key="" wx:for-item="tag">
+            <text>{{tag}}</text>
+          </view>
+        </view>
+        <view class="text">
+          <text>{{item.text||'什么都没写...'}}</text>
+        </view>
+        <view class="btns">
+          <view class="like">
+            <image src="/image/like.png"></image>
+            <text class="bold" data-id="{{item.id}}">{{item.like||0}}</text>
+          </view>
+          <view class="commnt">
+            <text class="">评论(0)</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

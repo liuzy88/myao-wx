@@ -1,0 +1,14 @@
+var aide = {};
+
+var cdn = 'http://qiniu-myao.liuzy88.com/';
+
+aide.getUrl = function (img) {
+  console.log(typeof img)
+  if (img.endsWith('.mp4')) {
+    return cdn + img;
+  } else if (img.endsWith('.jpg') || img.endsWith('.png')) {
+    return cdn + img + '?vframe/jpg/offset/0';
+  }
+}
+
+module.exports = aide;

@@ -1,0 +1,101 @@
+/**index.wxss**/
+.items {
+    width: 100%;
+}
+
+.item {
+    padding: 10px 10px;
+    margin: 10px 0;
+    background: #fff;
+}
+
+.img {
+    width: 100%;
+    min-height: 80px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.hide {
+    display: none;
+}
+
+
+.img image {
+    border-radius: 4px;
+    position: relative;
+    width: 100%;
+}
+
+.tags {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.tags span {
+    padding: 2px 3px;
+    background: #ff6fa6;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.utime {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    padding: 1px 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    color: #FFF;
+}
+
+.ctime {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    padding: 1px 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    color: #FFF;
+}
+
+.text {
+    padding: 8px 0;
+    line-height: 20px;
+    color: #666666;
+    font-size: 18px;
+}
+
+.btns {
+    padding: 8px 0;
+    height: 20px;
+    line-height: 20px;
+}
+
+.like image {
+    display: block;
+    float: left;
+    height: 23px;
+    width: 57px;
+    margin-right: 5px;
+}
+
+.like text {
+    line-height: 21px;
+    display: block;
+    float: left;
+    padding: 0px 6px;
+    color: #FF6699;
+    font-weight: 800;
+    border: 1px solid #ff6fa6;
+    border-radius: 3px;
+}
+
+.commnt {
+    display: block;
+    float: right;
+}
